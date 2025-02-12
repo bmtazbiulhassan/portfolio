@@ -1,0 +1,109 @@
+/* Import Main Stylesheet */
+@import url("/src/css/main/main.css");
+
+/*
+=========================
+Navigation Section
+=========================
+*/
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #e3e6f3;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    opacity: 0.9;
+    font-size: 1.2rem;
+    height: 75px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+/* Navbar Container */
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 0px 60px;
+}
+
+/* Logo Container */
+.navbar-logo-container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+}
+
+/* Logo Link */
+.navbar-logo-link {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+/* Logo Styling */
+.navbar-logo {
+    width: 45%;
+    height: auto;
+}
+
+/* Menu Container */
+.navbar-menu-container {
+    flex: 2;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+}
+
+/* Navbar Menu */
+.navbar-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* gap: 20px; */
+    padding: 0;
+    margin: 0;
+}
+
+/* Navbar List Items */
+.navbar-links {
+    list-style: none;
+    padding: 0;
+    position: relative;
+}
+
+/* Navbar Links */
+.navbar-link {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #1a1a1a;
+    transition: 0.3s ease-in-out;
+    padding: 10px 10px;
+    position: relative;
+}
+
+/* Hover Effect */
+.navbar-link:hover, .navbar-link.active {
+    color: #088178;
+}
+
+/* Active Link Underline Fix */
+.navbar-link.active::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 30%;
+    height: 2px;
+    background-color: #088178;
+    bottom: 6px;
+    left: 15%;
+}
