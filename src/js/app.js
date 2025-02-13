@@ -1,3 +1,4 @@
+// Text Animaltion
 const words = ["Researcher", "Data Scientist", "Developer"];
 let currentWordIndex = 0;
 let currentLetterIndex = 0;
@@ -27,5 +28,25 @@ typeEffect = () => {
 }
 
 typeEffect();
+
+
+// Mobile Menu
+document.addEventListener('DOMContentLoaded', function () {
+    const navbarMobileMenuOpenBar = document.querySelector("#open-bar")
+    const navbarMenuCloseBar = document.querySelector("#close-bar")
+    const navbarMenu = document.querySelector(".navbar-menu")
+
+    if (navbarMobileMenuOpenBar) {
+        navbarMobileMenuOpenBar.addEventListener('click', () => {
+            navbarMenu.classList.add('active')
+        })
+    }
+
+    if (navbarMenuCloseBar) { 
+        navbarMenuCloseBar.addEventListener('click', () => {
+            navbarMenu.classList.remove('active')
+        }) 
+    }
+});
 
 
